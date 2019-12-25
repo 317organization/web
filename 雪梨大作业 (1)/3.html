@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+    body{
+        background-image:url(dragon.jpg);
+        background-size:cover;
+        background-attachment: fixed;
+        background-position:center center;
+        height:600px;
+    }
+	ul,li,dl,dt,dd,p,ol,h1,h2,h3,h4,h5,h6,form,img,table,fieldset,legend{
+        margin:0; 
+        padding:0;
+    }
+    #logo{
+        height:80px;
+        width:100%;
+        background-color:rgba(120,120,120,0.7);
+        position:relative;
+        top:-5px;
+    }
+    #daohang{
+        height:25px;
+        width:100%;
+        background-color:rgba(120,120,120,0.9);
+    }
+   #daohang a,span{
+        float: left;
+        margin-left: 35px;
+    }
+    #daohang a{
+        color:white;
+        text-decoration:none;
+    }
+    #weizhi{
+        margin:100px auto；
+    }
+	#box{
+        top:-75px;
+        width:750px;
+        height:400px;
+        position:relative;
+        margin:100px auto;
+        background-color:white;
+    }
+    #box2{
+        width:750px;
+        height:300px;
+        position:relative;
+        top: -174px;
+        margin:100px auto;
+        background-color:rgba(255,255,255,0.1);
+        font-family:楷体;
+        font-size:30px;
+    }
+	#img1{
+        width:300px;
+        height:300px;
+        position:absolute;
+        left:0;
+        top:0;
+        background-color:red;
+    }
+	#slider{
+        width:150px;
+        height:150px;
+        position:absolute;
+        left:0;
+        top:0;
+        background:#CCC;
+        opacity:0.4;
+        cursor: move; 
+        filter:alpha(opacity=40);
+    }
+	#img2{
+        position:absolute;
+        right:0;top:0; 
+        width:400px;
+        height:400px;
+        overflow:hidden;
+    }
+	#Bimg{
+        position:absolute;
+        left:0;
+        top:0;
+    }
+</style>
+</head>
+
+   <body>
+        <div id = "logo">
+            <span><img src="gg.png"></span>
+        </div>
+        <div id = "daohang">
+<span id="weizhi"><a href="xueliwork.html">清明上河图</a><span>|</span><a href="xueliwork.html">平复帖
+			</a><span>|</span><a href="xueliwork.html">梅鹊图</a><span>|</span><a href="3.html">乾隆金瓯永固杯
+			</a><span>|</span><a href="4.html">掐丝珐琅缠枝莲纹象耳炉</a><span>|</span><a href="xueliwork.html">千里江山图</a><span>|</span><a href="6.html">亚酗方尊</a></span>
+        </div>
+        <div id="box">
+            <div id="img1">
+                 <img src="永固杯.jpg" width="300" height="300"/>
+                 <div id="slider"></div>
+            </div>
+               
+            <div id="img2">
+                <img src="永固杯1.jpg"  id="Bimg"/>
+            </div>
+         </div>
+         <div id="box2">
+             <p>元掐丝珐琅缠枝莲纹象耳炉是一件元代文物，现藏于故宫博物院，为故宫旧藏器中的珐琅珍品。"景泰蓝"已成为掐丝珐琅工艺的俗名。此器釉质莹润，有的部分釉质呈玻璃般的透明状，珐琅色泽浑厚谐调，富丽典雅，是一件高水平的元代掐丝珐琅作品，唯其铜胆和象耳为后配。</p>
+         </div>
+         <script type="text/javascript">
+             var img1 = document.getElementById("img1");
+             var slider = document.getElementById("slider");
+             var img2 = document.getElementById("img2");
+              var Bimg = document.getElementById("Bimg");
+             img1.onmouseover = function(){
+                slider.style.display="block";
+                img2.style.display="block";
+             }
+             img1.onmouseout = function(){
+                slider.style.display="none";
+                img2.style.display="none";
+             }
+             img1.onmousemove = function(ev){
+                var x = ev.clientX-75;
+
+             }
+            img1.onmousemove = function(ev){
+                var ol = ev.clientX-box.offsetLeft-150/2;
+                var ot = ev.clientY-box.offsetTop-150/2;
+                ol = ol>150?150:ol<0?0:ol;
+                ot = ot>150?150:ot<0?0:ot;
+                slider.style.left=ol+'px';
+                slider.style.top=ot+'px';
+                var Bl = -(ol/150)*400;
+                var Bt = -(ot/150)*400;
+                Bimg.style.left = Bl+'px';
+                Bimg.style.top = Bt +'px';
+             }
+         </script>
+    </body>
+</html>

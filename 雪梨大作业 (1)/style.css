@@ -1,0 +1,95 @@
+*{
+	padding:0;
+	margin:0;
+}
+ul li{
+	list-style: none;
+	text-align: center;
+}
+.box{
+	width: 1200px;
+	height: 382px;
+	border: 1px solid black;
+	margin: 100px auto;
+	position: relative;
+	overflow: hidden;
+}
+.slider{
+	width: 8400px;
+	position: absolute;
+	left: -1200px;	
+}
+.slide{
+	width: 1200px;
+	overflow: hidden;
+	float: left;
+}
+.nav{
+	position: absolute;
+	left: 500px;
+	bottom: 20px;
+}
+.nav>li{
+	float: left;
+	width: 20px;
+	height: 20px;
+	background:#ccc;
+	cursor: pointer;
+	/*//margin-left: 15px;*/
+	margin: 0 10px;
+	border-radius: 50%;
+}
+.nav .active{
+	background-color:red;
+}
+.box>span{
+	display: block;
+	width: 30px;
+	height: 50px;
+	text-align: center;
+	cursor: pointer;
+	top: 175px;
+	line-height: 50px;
+	background: rgb(255,0,0);
+	font-size: 30px;
+	position: absolute;
+	opacity: 0;
+}
+
+#left{
+	left: 30px;
+}
+#right{
+	right: 30px;
+}
+.laba{
+
+    width:100%;
+ 	height:25px;
+    background-color: #ccc;
+    overflow: hidden;
+    margin-bottom: 6px;
+}
+.picture{
+    width: 16px;
+    height: 16px;
+    position: fixed;
+    left: 300px;
+    margin-top: 3px;
+}
+.wenzi{
+	margin-left: 320px;
+	width:1000px;
+	height: 30px;
+    overflow: hidden;
+}
+.word{
+	width:500px;
+    margin :0 auto;
+    /*text-align: center;*/
+    padding-top:3px;
+    color: red;
+    font-size: 15px;
+    position: relative;
+    right: -700px;
+}

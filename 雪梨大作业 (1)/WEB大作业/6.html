@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+    body{
+        background-image:url(dragon.jpg);
+        background-size:cover;
+        background-attachment: fixed;
+        background-position:center center;
+        height:600px;
+    }
+	ul,li,dl,dt,dd,p,ol,h1,h2,h3,h4,h5,h6,form,img,table,fieldset,legend{
+        margin:0; 
+        padding:0;
+    }
+    #logo{
+        height:80px;
+        width:100%;
+        background-color:rgba(120,120,120,0.7);
+        position:relative;
+        top:-5px;
+    }
+    #daohang{
+        height:25px;
+        width:100%;
+        background-color:rgba(120,120,120,0.9);
+    }
+   #daohang a,span{
+        float: left;
+        margin-left: 35px;
+    }
+    #daohang a{
+        color:white;
+        text-decoration:none;
+    }
+    #weizhi{
+        margin:100px auto；
+    }
+	#box{
+        top:-75px;
+        width:750px;
+        height:400px;
+        position:relative;
+        margin:100px auto;
+        background-color:white;
+    }
+    #box2{
+        width:750px;
+        height:300px;
+        position:relative;
+        top: -174px;
+        margin:100px auto;
+        background-color:rgba(255,255,255,0.1);
+        font-family:楷体;
+        font-size:30px;
+    }
+	#img1{
+        width:300px;
+        height:300px;
+        position:absolute;
+        left:0;
+        top:0;
+        background-color:red;
+    }
+	#slider{
+        width:150px;
+        height:150px;
+        position:absolute;
+        left:0;
+        top:0;
+        background:#CCC;
+        opacity:0.4;
+        cursor: move; 
+        filter:alpha(opacity=40);
+    }
+	#img2{
+        position:absolute;
+        right:0;top:0; 
+        width:400px;
+        height:400px;
+        overflow:hidden;
+    }
+	#Bimg{
+        position:absolute;
+        left:0;
+        top:0;
+    }
+</style>
+</head>
+
+   <body>
+        <div id = "logo">
+            <span><img src="gg.png"></span>
+        </div>
+        <div id = "daohang">
+           <span id="weizhi"><a href="index-onclass.html">清明上河图</a><span>|</span><a href="1.html">平复帖</a><span>|</span><a href="2.html">梅鹊图</a><span>|</span><a href="3.html">乾隆金瓯永固杯</a><span>|</span><a href="4.html">掐丝珐琅缠枝莲纹象耳炉</a><span>|</span><a href="5.html">千里江山图</a><span>|</span><a href="6.html">亚酗方尊</a></span>
+        </div>
+        <div id="box">
+            <div id="img1">
+                 <img src="亚酗方尊.jpg" width="300" height="300"/>
+                 <div id="slider"></div>
+            </div>    
+            <div id="img2">
+                <img src="亚酗方尊1.jpg"  id="Bimg"/>
+            </div>
+         </div>
+         <div id="box2">
+             <p>尊是盛酒器，流行于商早期至春秋战国时期。方尊传世较少。传世的亚器有50件上下，器型不一，有方簋、方尊、方罍、方爵和兕觥等，仅台北故宫博物院就藏有15件。70年代在山东益都苏埠屯出土了几件带有亚铭文的青铜器，从挖掘的墓穴来看，规模都不小，其中一座还是有四个墓道的大墓。加上众多的带有亚铭记的器物，说明它们所代表的可能是一个大族。再从本器铭文看，能祭祀诸王后和太子的，也不会是一般的部族。此外，早年间苏埠屯还曾出土过一些"亚器"，也有学者就此推测苏埠屯是亚族的墓葬区。青铜器的产生是古代中国从野蛮时代走向文明时代的重要标志之一。尊是盛酒器，流行于商早期至春秋战国时期。方尊传世较少。上世纪70年代在山东益都苏埠屯出土了几件带有亚酗铭文的青铜器，从挖掘的墓穴来看，规模都不小，加上众多的带有亚酗铭记的器物，说明它们所代表的可能是一个大族</p>
+         </div>
+         <script type="text/javascript">
+             var img1 = document.getElementById("img1");
+             var slider = document.getElementById("slider");
+             var img2 = document.getElementById("img2");
+              var Bimg = document.getElementById("Bimg");
+             img1.onmouseover = function(){
+                slider.style.display="block";
+                img2.style.display="block";
+             }
+             img1.onmouseout = function(){
+                slider.style.display="none";
+                img2.style.display="none";
+             }
+             img1.onmousemove = function(ev){
+                var x = ev.clientX-75;
+
+             }
+            img1.onmousemove = function(ev){
+                var ol = ev.clientX-box.offsetLeft-150/2;
+                var ot = ev.clientY-box.offsetTop-150/2;
+                ol = ol>150?150:ol<0?0:ol;
+                ot = ot>150?150:ot<0?0:ot;
+                slider.style.left=ol+'px';
+                slider.style.top=ot+'px';
+                var Bl = -(ol/150)*400;
+                var Bt = -(ot/150)*400;
+                Bimg.style.left = Bl+'px';
+                Bimg.style.top = Bt +'px';
+             }
+         </script>
+    </body>
+</html>

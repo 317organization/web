@@ -1,0 +1,150 @@
+* {
+            margin: 0;
+            padding: 0;
+        }
+        #main{
+            width: 70%;
+            margin-left: 15%;
+            background-color: #F5F5F5;
+            height: 1500px;
+        }
+        #demo {
+            display: block;
+            width: 400px;
+            height: 255px;
+            margin: 50px;
+            position: relative;
+            left: 360px;
+        }
+        #small-box {
+            position: relative;
+            left: -85px;
+            float: left;
+            z-index: 1;
+        }
+        #small-box img{
+            width: 400px;
+            height: 300px;
+        }
+        #float-box {
+            display: none;
+            width: 160px;
+            height: 120px;
+            position: absolute;
+            background: #ffffcc;
+            border: 1px solid #ccc;
+            filter: alpha(opacity=50);
+            opacity: 0.5;
+        }
+        #mark {/*应该是把图片放在这个上面，它的透明度为0，是个block*/
+            position: absolute;
+            display: block;
+            width: 400px;
+            height: 255px;
+            background-color: #fff;
+            filter: alpha(opacity=0);/*过滤器，目前只有少数浏览器支持*/
+            opacity: 0;
+            z-index: 10;
+        }
+        #big-box {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 320px;
+            width: 400px;
+            height: 300px;
+            overflow: hidden;
+            border: 1px solid #ccc;
+            z-index: 1;;
+        }
+
+        #big-box img {
+            position: absolute;
+            z-index: 5;
+        }
+        .passage1{
+            position: absolute;
+            left: 450px;
+            width: 580px;
+            text-align: center;
+            background-color: #F5F5F5;
+        }
+        .top{
+            font-size:40px;
+            font-family: 楷体;
+            color: red;
+            text-align: center;
+            padding-top: 15px;
+            background-color: #D5D5D5;
+            height: 55px;
+            background-image: url(image/grey.jpg);
+        }
+
+        .logo{
+            position: absolute;
+            top: 2px;
+            left: 200px;
+        }
+        #bottom{
+            position: absolute;
+            background-color: #D3D3D3;
+            height: 30px;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            text-align: center;
+        }
+        .title1{
+            font-size: 32px;
+            font-family: 楷体;
+            text-align: center;
+
+        }
+        .word{
+            font-size: 18px;
+            font-family: 楷体;
+            text-align: center;
+            text-indent: 2em;
+        }
+        .red{
+            background-image: url(image/code.jpg);
+            background-size:100%;
+            width:200px;
+            height:200px;
+            position:fixed;
+            left:-200px;
+            top:70px;
+        }
+        .blue{
+            background-color: #FF4500;
+            width:20px;
+            height:110px;
+            position:absolute;
+            left:200px;
+            top:50px;
+        }
+        .nav{
+            width: 100%;
+            height: 50px;
+            background-color: black;
+            text-align: center;
+        }
+        .nav div{
+            list-style:none;
+            display: inline-block;
+            color: white;
+            width: 120px;
+            height: 50px;
+            margin-left: 30px;
+        }
+        .nav a{
+            text-decoration: none;
+            line-height: 50px;
+            color: white;
+        }
+        .nav:hover{
+            background-color: orange;
+        }
+        .nav div:hover{
+            background-color: green;
+        }

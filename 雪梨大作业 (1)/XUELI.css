@@ -1,0 +1,274 @@
+*{
+		margin:0;
+		padding: 0;
+	}
+	li{
+		list-style: none;
+	}
+
+	#ulmian {
+		position: relative;
+		width: 1900px;
+		height: 930px;
+		margin: 0px auto;
+		overflow: hidden;
+	}
+	
+	#ulmian li {
+		position: absolute;
+		height: 100%;
+		opacity: 0;
+		transition: opacity 1s;
+	}
+	
+	#ulmian li:first-child {
+		position: absolute;
+		height: 100%;
+		opacity: 1;
+	}
+	
+	#ulmian li img {
+		width: 1900px;
+		height: 930px;
+	}
+	.middle{
+		border: 1px solid #000000;
+		width: 1200px;
+		height: 940px;
+		margin: 0px auto;
+		background-color: whitesmoke;
+	}
+	.middlenext1{
+		/* border: 2px solid #000000; */
+		width: 1200px;
+		height:400px;
+		margin: 30px auto;
+	}
+	.intro1{
+		position: absolute;
+		width: 750px;
+		height: 400px;
+		margin-top: 0px;
+		/* border: 2px solid #000000; */
+	}
+	.p1{
+		font-size: 20px;
+		margin-top: 20px;
+		/* font-family: 微软雅黑; */
+		/* color: blue; */
+	}
+	.chakan{
+		margin-top: 40px;
+		
+	}
+	.intro2{
+		width: 400px;
+		height: 400px;
+		margin-left: 800px;
+		/* border: 2px solid red; */
+		border-bottom-left-radius: 15px;
+		border-top-left-radius: 15px;
+		position: relative;
+		overflow: hidden;
+	}
+	.slider0{
+		width: 2800px;
+		position: absolute;
+		left: -400px;
+	}
+	.slide0{
+		width: 400px;
+		overflow: hidden;
+		float: left;
+	}
+	.imgs2{
+		width: 400px;
+		height: 400px;
+	}
+	.fix{
+		position: fixed;
+		top: 10%;
+		left: 2.7%;
+		width: 1100px;
+		height: 800px;
+		margin: auto auto;
+		overflow: hidden;
+		/* border: none; */
+		z-index:0000;
+		
+		
+	}
+	
+	.intro2b{
+		width: 400px;
+		height: 400px;
+		margin-left: 800px;
+		/* border: 2px solid red; */
+		border-bottom-right-radius: 15px;
+		border-top-right-radius: 15px;
+		position: relative;
+		overflow: hidden;
+	}
+	.slider0b{
+		width: 2800px;
+		position: absolute;
+		left: -400px;
+	}
+	.slide0b{
+		width: 400px;
+		overflow: hidden;
+		float: left;
+	}
+	.imgs2b{
+		width: 400px;
+		height: 400px;
+	}
+	.fix0{
+		position: fixed;
+		top: 10%;
+		left: 39.8%;
+		width: 1100px;
+		height: 800px;
+		margin: auto auto;
+		/* border: 2px solid yellow; */
+		z-index:0000;
+		
+	}
+	.notice{
+		/* border: 2px solid green; */
+		width: 1400px;
+		height: 80px;
+		margin: 0px auto;
+		background:url("red.jpg");
+	}
+	.notice1{
+		width: 200px;
+		height: 100px;
+		position: absolute;
+		/* background-color: lightblue; */
+		
+	}
+	.notice2{
+		width: 1000px;
+		height: 100px;
+		position: absolute;
+		margin-left: 200px;
+		/* background-color: green; */
+	}
+	#time{
+		color: white;
+		font-size: 27px;
+		margin-top: 20px;
+		cursor: pointer;
+	}
+	.finally{
+		width: ;
+		height: 150px;
+		position: relative;
+		background-color: #222;
+	}
+	.bott{
+		position: absolute;
+		/* margin-top: 50px; */
+		left: 30%;
+		margin-top: 50px;
+		/* border: 1px solid #222; */
+		/* background-color: red; */
+		border-bottom-color: white;
+		/* margin-left: 500px; */
+	}
+	.top{
+		width: 100%;
+		height: 70px;
+		position: absolute;
+		z-index: 1111;
+		top: 0;
+		left: 0;
+		background: rgba(00,22,33,0.5);
+		
+		
+	}
+	.notice3{
+		width: 190px;
+		height: 80px;
+		position: absolute;
+		margin-left: 1250px;
+		margin-top: 8px;
+		/* background-color: green; */
+	}
+	.notice4{
+		width: 10px;
+		height: 100px;
+		position: absolute;
+		margin-left: 1230px;
+		color: yellow;
+		font-size: 50px;
+		/* background-color: green; */
+	}
+	#nowtime{
+		
+		font-size: 25px;
+		color: yellow;
+	}
+	.menu {
+		font-family: "华文行楷";
+		width: 1100px;
+	/* 	border: 2px solid #000000; */
+		margin: 20px auto;
+	}
+	
+	.menu ul {
+		list-style: none;
+	}
+	
+	.menu ul li {
+		float: left;
+		position: relative;
+		
+	}
+	
+	.menu ul li a,
+	.menu ul li a:visited {
+		display: block;
+		text-align: center;
+		text-decoration: none;
+		width: 150px;
+		height: 30px;
+		border-radius: 10px;
+		color: #fff;
+		/* border: 1px solid #fff; */
+		border-width: 1px 1px 0 0;
+		/* background: #ccc; */
+		line-height: 30px;
+		font-family: 楷体;
+		font-size: 20px;
+	}
+	
+	.menu ul li ul {
+		display: none;
+	}
+	
+	.menu ul li:hover a {
+		color: #000;
+		background: #bbb;
+	}
+	
+	.menu ul li:hover ul {
+		display: block;
+		position: absolute;
+		top: 31px;
+		left: 0;
+		width: 105px;
+	}
+	
+	.menu ul li:hover ul li a {
+		display: block;
+		background: #ccc;
+		color: #000;
+		opacity: 0.8;
+	}
+	
+	.menu ul li:hover ul li a:hover {
+		background: #bbb;
+		color: #000;
+	}
